@@ -9,6 +9,18 @@ h2 { color: wheat;
 
 .search {
     margin-right: 5%;
+    margin-top: 1%;
+}
+
+.btn {
+    margin: 3px;
+}
+
+.searchTerm{
+    height: 40px;
+    margin-bottom: 4px;
+    border-radius: 6px;
+
 }
 
 .nav-item{
