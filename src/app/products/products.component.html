@@ -7,16 +7,22 @@
     <aside class="search">
         <ul class="nav flex-column">
         <li class="nav-item">
-          Etsi tuote
-          <input>
+            Search <fa-icon [icon]="faMagnifyingGlass"></fa-icon>
+            <input
+            type="text"
+            [(ngModel)]="term"
+            class="searchTerm"
+            placeholder="Kirjoita hakusana.."
+          />
         </li>
-        <li class="nav-item">
-            Lajittele
-            <input>
-          </li>
+        <button type="button" class="btn btn-outline-primary" (click)="sortA(true)">Ascend <fa-icon [icon]="faArrowRight"></fa-icon></button>
+        <button type="button" class="btn btn-outline-primary" (click)="sortA(false)">Descend <fa-icon [icon]="faArrowRight"></fa-icon></button>
+        <button type="button" class="btn btn-outline-info" (click)="sortB(true)">Newest <fa-icon [icon]="faArrowRight"></fa-icon></button>
+        <button type="button" class="btn btn-outline-secondary" (click)="sortB(false)">Oldest <fa-icon [icon]="faArrowRight"></fa-icon></button>
+
+
 
       </ul>
-
 
     </aside>
 
@@ -25,7 +31,7 @@
 
 
 
-        <section class="card mb-3" *ngFor="let x of ProductList">
+        <section class="card mb-3" *ngFor="let x of ProductList | filter: term">
 
             <article class="productcard-flex">
 
