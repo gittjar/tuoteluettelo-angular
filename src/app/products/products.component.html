@@ -1,0 +1,52 @@
+<nav class="navbar bg-dark" data-bs-theme="dark">
+    <h2>.NET22S Jarno</h2>
+  </nav>
+
+<section class="main">
+
+    <aside class="search">
+        <ul class="nav flex-column">
+        <li class="nav-item">
+          Etsi tuote
+          <input>
+        </li>
+        <li class="nav-item">
+            Lajittele
+            <input>
+          </li>
+
+      </ul>
+
+
+    </aside>
+
+
+    <article class="puhelimet">
+
+
+
+        <section class="card mb-3" *ngFor="let x of ProductList">
+
+            <article class="productcard-flex">
+
+           <figure><img src="{{'assets/' + x.imageUrl}}" class="card-img-top" alt="..."></figure>
+
+            <section class="card-body">
+              <h5 class="card-title">{{x.name}}</h5>
+              <p class="card-text">{{x.snippet}}</p>
+              <p class="card-text"><small class="text-muted">{{x.carrier}}</small></p>
+            </section>
+        </article>
+
+        </section>
+
+
+
+
+
+
+
+
+</article>
+
+</section>

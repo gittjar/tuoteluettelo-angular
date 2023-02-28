@@ -1,0 +1,43 @@
+h2 { color: wheat;
+    margin-left: 2%;
+    }
+
+.main {
+    display: flex;
+    flex-direction: row;
+}
+
+.search {
+    margin-right: 5%;
+}
+
+.nav-item{
+    margin-left: 2%;
+    margin-top: 2%;
+}
+
+.puhelimet {
+    margin-right: 1%;
+    margin-top: 2%;
+}
+
+.puhelinkortti {
+    margin: 1%;
+    
+}
+
+.productcard-flex{
+    display: flex;
+    flex-direction: row;
+    padding: 5px;
+}
+
+figure {
+    width: 15%;
+   /* border: black solid 1px; */
+    padding: 0.1rem;
+}    
+figure img {
+    max-width: 100%;
+    
+}
