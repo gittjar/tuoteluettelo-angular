@@ -3,7 +3,6 @@ import { PhoneService } from '../phone.service';
 import { faArrowRight } from '@fortawesome/free-solid-svg-icons';
 import { faMagnifyingGlass } from '@fortawesome/free-solid-svg-icons';
 
-
 @Component({
   selector: 'app-products',
   templateUrl: './products.component.html',
@@ -15,6 +14,10 @@ export class ProductsComponent implements OnInit {
   SortProductList: any;
   term = '';
   searchTerm = '';
+
+
+  Products = '/assets/phones/';
+    
 
   // Fontawesome
   faArrowRight = faArrowRight;
@@ -54,23 +57,30 @@ export class ProductsComponent implements OnInit {
       }
 
 
-    
-
-
-
 
  getProducts(): void {
     this.hpservice.getProducts().subscribe((data: any) => {
       this.ProductList = data;
      ///this.ProductList.sort((a: { age: number; }, b: { age: number; }) => (a.age < b.age) ? 1:
-
-
+    },
+    
+    (error: any) => {
+      console.log('http-error:');
+      console.log(error);
+    });
+  } 
+/*
+  getProductDetail(id:string): any {
+    this.hpservice.getProduct().subscribe((data: any) => {
+      this.ProductList = data;
     },
     (error: any) => {
       console.log('http-error:');
       console.log(error);
     });
-    
   }
+  */
+
+
 
 }

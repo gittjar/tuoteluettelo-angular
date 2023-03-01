@@ -1,0 +1,11 @@
+h2 { color: wheat;
+    margin-left: 2%;
+    }
+
+    .nav-link {
+        margin-right: 10px;
+    }
+
+    .nav-link:hover {
+        background-color: rgb(38, 40, 40);
+    }

@@ -9,15 +9,14 @@ import { ProductsComponent } from './products/products.component';
 import { HttpClientModule } from '@angular/common/http';
 import { Ng2SearchPipeModule } from 'ng2-search-filter';
 import { FormsModule } from '@angular/forms';
-import { FontAwesomeModule } from '@fortawesome/angular-fontawesome'
-
-
-
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import { ProductDetailsComponent } from './product-details/product-details.component'
 
 @NgModule({
   declarations: [
     AppComponent,
     ProductsComponent,
+    ProductDetailsComponent,
     
   ],
   imports: [

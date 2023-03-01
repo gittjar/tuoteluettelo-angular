@@ -1,6 +1,4 @@
-h2 { color: wheat;
-    margin-left: 2%;
-    }
+
 
 .main {
     display: flex;
@@ -8,9 +6,11 @@ h2 { color: wheat;
 }
 
 .search {
-    margin-right: 5%;
+    margin-right: 2%;
+    margin-left: 2%;
     margin-top: 1%;
 }
+
 
 .btn {
     margin: 3px;
@@ -50,6 +50,5 @@ figure {
     padding: 0.1rem;
 }    
 figure img {
-    max-width: 100%;
-    
+    max-width: 100%;   
 }

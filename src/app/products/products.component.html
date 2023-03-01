@@ -1,11 +1,10 @@
-<nav class="navbar bg-dark" data-bs-theme="dark">
-    <h2>.NET22S Jarno</h2>
-  </nav>
+
 
 <section class="main">
 
     <aside class="search">
         <ul class="nav flex-column">
+
         <li class="nav-item">
             Search <fa-icon [icon]="faMagnifyingGlass"></fa-icon>
             <input
@@ -15,16 +14,17 @@
             placeholder="Kirjoita hakusana.."
           />
         </li>
+
         <button type="button" class="btn btn-outline-primary" (click)="sortA(true)">Ascend <fa-icon [icon]="faArrowRight"></fa-icon></button>
         <button type="button" class="btn btn-outline-primary" (click)="sortA(false)">Descend <fa-icon [icon]="faArrowRight"></fa-icon></button>
         <button type="button" class="btn btn-outline-info" (click)="sortB(true)">Newest <fa-icon [icon]="faArrowRight"></fa-icon></button>
         <button type="button" class="btn btn-outline-secondary" (click)="sortB(false)">Oldest <fa-icon [icon]="faArrowRight"></fa-icon></button>
 
 
-
       </ul>
-
     </aside>
+
+    
 
 
     <article class="puhelimet">
@@ -38,7 +38,19 @@
            <figure><img src="{{'assets/' + x.imageUrl}}" class="card-img-top" alt="..."></figure>
 
             <section class="card-body">
-              <h5 class="card-title">{{x.name}}</h5>
+
+              <h5 class="card-title">
+
+              <a href="#" class=""
+    
+              [title]="x.name + ' details'"
+              [routerLink]="['/product-details/', x.id]">
+              {{ x.name }} 
+<!--
+              <a [routerLink]="['/product-details/', x.id]" class="btn btn-danger">Check Product</a>
+-->
+            </a>
+            </h5>
               <p class="card-text">{{x.snippet}}</p>
               <p class="card-text"><small class="text-muted">{{x.carrier}}</small></p>
             </section>
