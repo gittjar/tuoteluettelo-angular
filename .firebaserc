@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "angular-web-applications": {
+      "hosting": {
+        "json-service-tuoteluettelo": [
+          "json-product-catalog"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "angular-web-applications"
+  }
+}

@@ -15,6 +15,8 @@ export class ProductDetailsComponent implements OnInit  {
  // product: Product | undefined;
   pageTitle = 'Product Detail';
 
+
+
   constructor(private actRoute: ActivatedRoute, private router: Router, private hpservice: PhoneService) {
   // this.product_id = this.actRoute.snapshot.params['id'];
   }
@@ -34,9 +36,7 @@ if(id){
     });
   }*/
 
-  ChangeImg() {  
-     
-  } 
+ 
 
   
   getProductDetail(id: string): any {

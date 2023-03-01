@@ -12,6 +12,7 @@ import { FormsModule } from '@angular/forms';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { ProductDetailsComponent } from './product-details/product-details.component'
 
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -26,7 +27,7 @@ import { ProductDetailsComponent } from './product-details/product-details.compo
     HttpClientModule ,
     Ng2SearchPipeModule,
     FormsModule,
-    FontAwesomeModule
+    FontAwesomeModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
