@@ -92,6 +92,16 @@
             ],
             "scripts": []
           }
+        },
+        "deploy": {
+          "builder": "@angular/fire:deploy",
+          "options": {
+            "prerender": false,
+            "ssr": false,
+            "browserTarget": "json-service-tuoteluettelo:build:production",
+            "firebaseProject": "angular-web-applications",
+            "firebaseHostingSite": "json-product-catalog"
+          }
         }
       }
     }
