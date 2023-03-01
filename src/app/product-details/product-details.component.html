@@ -1,0 +1,66 @@
+
+<section class="main">
+<p *ngIf="ProductDetail"></p>
+<h1>
+{{ProductDetail.name}}
+</h1>
+<br>
+
+
+
+
+   
+  
+
+
+
+
+
+
+
+<!--
+<h5 class="card-title">Product Id is: {{product_id}}</h5>
+-->
+
+<p>Description: {{ProductDetail.description}}</p>
+<hr>
+<section class="tuotekortti">
+
+    <article class="headimage" *ngFor="let image of ProductDetail.images; let first = first;"> 
+        <figure class="paakuva"><img type="image"  *ngIf="first" src="{{'assets/' + image}}" alt="{{ProductDetail.name}}"></figure> 
+    </article>
+
+<article class="speksit_eka">
+<p><b>CPU:</b> {{ProductDetail.hardware.cpu}}</p>
+<p><b>Flash:</b> {{ProductDetail.storage.flash}}</p>
+<p><b>Display:</b> {{ProductDetail.display.screenResolution}}</p>
+<p><b>Display size:</b> {{ProductDetail.display.screenSize}}</p>
+<p><b>Touch screen:</b> {{ProductDetail.display.touchSreen}}</p>
+<p><b>Availability:</b> {{ProductDetail.availability}}</p>
+</article>
+<article class="speksit_toka">
+    <p><b>Dimensions:</b> {{ProductDetail.sizeAndWeight.dimensions}}</p>
+    <p><b>Weight:</b> {{ProductDetail.sizeAndWeight.weight}}</p>
+    <p><b>USB:</b> {{ProductDetail.hardware.usb}}</p>
+    <p><b>Audio:</b> {{ProductDetail.hardware.audioJack}}</p>
+    <p><b>BlueTooth:</b> {{ProductDetail.connectivity.bluetooth}}</p>
+    <p><b>Cell:</b> {{ProductDetail.connectivity.cell}}</p>
+    </article>
+
+</section>
+<hr>
+<figure class="prodkuvat"><img type="image" *ngFor="let image of ProductDetail.images" src="{{'assets/' + image}}" alt="{{ProductDetail.name}}"></figure>
+
+<hr>
+
+<!--
+<h1 *ngIf="product">
+
+    {{product.name}}
+</h1>
+-->
+<button class='btn btn-outline-secondary'
+(click)='onBack()'>
+ Back to Products
+</button>
+</section>

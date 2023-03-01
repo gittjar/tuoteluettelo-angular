@@ -1,0 +1,32 @@
+.main {
+margin: 2%;
+}
+
+.tuotekortti {
+    display: flex;
+    flex-direction: row;
+}
+
+.speksit_eka, .speksit_toka {
+    margin: 2%;
+}
+
+.paakuva {
+    width: 85%;
+    margin-left: 4%;
+    margin-top: 5%;
+}
+
+.prodkuvat {
+    display: flex;
+    flex-direction: row;
+}
+
+figure {
+    width: 15%;
+   /* border: black solid 1px; */
+    padding: 0.1rem;
+}    
+figure img {
+    max-width: 100%;   
+}
